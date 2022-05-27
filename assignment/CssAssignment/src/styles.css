@@ -249,3 +249,58 @@ th,td{
     color:#54595e;
     border: 1px solid #54595e;
 }
+
+/* Form Section */
+#forms{
+    margin: 0 234px 0 250px;
+}
+
+.components{
+    float: left;
+    width: 500px;
+    
+}
+.components-link{
+    /* padding: 20px 10px; */
+    border: 1px solid black;
+}
+.components-link a{
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+    color: black;
+    font-size: 20px;
+}
+.components-link a:hover{
+    background: #7749f8;
+}
+.fields{
+    float: right;
+    width: 600px;
+}
+.field{
+    margin-bottom: 20px;
+}
+.fields label{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.field-input input[type='text'], .menu,.field-textarea, .success,.error{
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.field th, .field td{
+    padding: 20px;
+    font-size: 18px;
+    color: black;
+}
+.success{
+    border: 1px solid green;
+}
+.error{
+    border: 1px solid red;
+}
