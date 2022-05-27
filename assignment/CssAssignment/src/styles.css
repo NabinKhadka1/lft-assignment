@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 119px;
+}
+nav{
+    margin: 0 234px 0 250px;
+    height: 100%;
+    padding: 51px 0;
+    text-align: center;
+}
+
+/* Left nav portion */
+.nav-left{
+    float: left;
+}
+.nav-logo{
+    float: left;
+    margin-right: 58px;
+}
+.nav-items{
+    float: right;
+}
+.list-items{
+    list-style-type: none;
+}
+.list-item{
+    display: inline;
+    padding: 0 24px;
+}
+.list-items > li > a{
+    text-decoration: none;
+    color: #6e777f;
+}
+
+/* Right Nav portion */
+.nav-right{
+    float: right;
+    margin-top: -20px;
+}
+
+.nav-right input[type='text']{
+    padding: 15px;
+    border: 1px solid #e7eaed;
+    border-radius: 5px;
+    
+}
+.nav-btn{
+    padding: 15px 20px;
+    color: #28a745;
+    border: 1px solid#28a745;
+    border-radius: 5px;
+    
+}
+
+/* Color Section  */
+#color{
+    margin: 0 234px 0 250px;
+    height: 500px;
+    
+}
+.section-heading{
+    margin: 20px 0;
+}
+
+.color-wrapper{
+    margin-top: 20px;
+    height: 220px;
+}
+.color-wrapper h2{
+    margin-bottom: 20px;
+}
+h4{
+    margin: 4px 0;
+    font-size: 18px;
+}
+
+.box-container{
+    height: 170px;
+    margin-right: 34px;
+    float: left;
+}
+.box{
+    width: 230px;
+    height: 100px;
+    border-radius: 5px;
+}
+.info p{
+    margin-top: 5px;
+}
+.text-color{
+    color: #6e777f;
+}
+.clearfix{
+    clear: both;
+}
+
+/* Primary Color */
+.box-primary{
+    background-color: #7749FB;
+}
+
+.box-primary-dark{
+    background-color: #5227CC;
+}
+
+.box-primary-light{
+    background-color: #EBE5FC;
+
+}
+
+
+/* Secondary Color */
+.box-secondary{
+    background-color: #007DFF;
+}
+
+.box-secondary-dark{
+    background-color: #54595E;
+}
+
+.box-secondary-light{
+    background-color: #ABB5BE;
+}
+
+/* Status Color */
+.box-success{
+    background-color: #28A745;
+}
+
+.box-danger{
+    background-color: #DC3545;
+}
+
+.box-warning{
+    background-color: #FFC107;
+}
+.box-info{
+    background-color: #17A2BB;
+}
+
+/* Gray Color */
+.box-gray-600{
+    background-color: #6c757d;
+}
+
+.box-gray-700{
+    background-color: #495057;
+}
+
+.box-gray-800{
+    background-color: #343a40;
+}
+.box-gray-900{
+    background-color: #212529;
+}
