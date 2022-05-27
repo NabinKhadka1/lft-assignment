@@ -304,3 +304,72 @@ th,td{
 .error{
     border: 1px solid red;
 }
+
+/* List Group */
+#list-group{
+    margin: 0 234px 0 250px;
+
+}
+.left-content{
+    float: left;
+    width: 500px;
+}
+.right-content{
+    float: right;
+    width: 500px;
+}
+.left-content ul  li{
+    font-size: 20px;
+}
+.left-content  ul li:first-child{
+    color: white;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.list-group{
+    background-color: #fff;
+    border: 1px solid #6c757d;
+    padding: 10px;
+    color: black;
+}
+.list-group:first-child{
+    background-color: #7749f8;
+    border: 1px solid #6c757d;
+    padding: 10px;
+    color: white;
+}
+.first-para-lgroup,.second-para-lgroup{
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: black;
+}
+
+.list-group:first-child .first-para-lgroup,.list-group:first-child .second-para-lgroup{
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.content{
+    background-color: white;
+    color: black;
+}
+.left-content ul{
+    list-style-type: none;
+}
+.left-content ul li{
+    padding: 20px 10px;
+    border: 1px solid #6c757d;
+}
+.left-content ul li:first-child{
+    background-color: #7749f8;
+    color: white;
+}
+.heading-4{
+    font-size: 40px;
+}
