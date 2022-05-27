@@ -208,3 +208,44 @@ h4{
     padding: 5px 10px;
     text-decoration: none;
 }
+
+/* Buttons Section */
+#buttons{
+    margin: 0 234px 0 250px;
+}
+.primary-wrapper{
+    margin-top: 40px;
+}
+th,td{
+    padding: 30px;
+    font-size: 25px;
+    color: #6c757d;
+}
+.default{
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn-color-light{
+    background-color: #7749f8;
+}
+.btn-color-outline{
+    color: #7749f8;
+    border: 1px solid #7749f8;
+}
+.btn-color-dark{
+    background-color: #5227cc;
+}
+
+.btn-secondary-light{
+    background-color: #6c757d;
+
+}
+.btn-secondary-dark{
+    background-color: #54595e;
+}
+.btn-secondary-outline{
+    color:#54595e;
+    border: 1px solid #54595e;
+}
