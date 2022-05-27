@@ -62,8 +62,6 @@ nav{
 /* Color Section  */
 #color{
     margin: 0 234px 0 250px;
-    height: 500px;
-    
 }
 .section-heading{
     margin: 20px 0;
@@ -159,4 +157,54 @@ h4{
 }
 .box-gray-900{
     background-color: #212529;
+}
+
+/* Typography Section */
+#typography{
+    margin: 0 234px 0 250px;
+}
+.container{
+    margin-top: 20px;
+    height: 410px;
+}
+.left-container{
+    float: left;
+    max-width: 550px;
+}
+.right-container{
+    float: right;
+    max-width: 550px;
+}
+.container h2{
+    font-size: 25px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+.left-container p, .right-container p{
+    color: #6e777f;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+.heading-2{
+    font-size: 25px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+.para{
+    color: #6c757d;
+    margin-bottom: 60px;
+    line-height: 1.5;
+    font-size: 20px;
+
+}
+.tab-links{
+    margin-bottom: 12px;
+}
+.tab-content{
+    width: 600px;
+}
+.tab-links a{
+    border: 1px solid #6c757d;
+    padding: 5px 10px;
+    text-decoration: none;
 }
