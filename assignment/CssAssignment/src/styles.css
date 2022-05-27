@@ -65,6 +65,7 @@ nav{
 }
 .section-heading{
     margin: 20px 0;
+    font-size: 40px;
 }
 
 .color-wrapper{
@@ -372,4 +373,39 @@ th,td{
 }
 .heading-4{
     font-size: 40px;
+}
+
+
+/* Tables Starts */
+#tables{
+    margin: 0 234px 0 250px;
+
+}
+.table-container table{
+    width: 100%;
+}
+.table-container th, .table-container td{
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.table-container tr:nth-child(even){
+    background-color: #E7E9EB;
+}
+
+.prev,.one,.two,.three,.next{
+    text-decoration: none;
+    padding: 17px;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+}
+.one{
+    background-color: #7749f8;
+    color: #fff;
+}
+.two,.three{
+    color: #7749f8;
+}
+.pagination{
+    margin: 45px 0;
 }
