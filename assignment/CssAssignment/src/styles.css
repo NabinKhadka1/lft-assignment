@@ -298,6 +298,7 @@ th,td{
     padding: 20px;
     font-size: 18px;
     color: black;
+    text-align: left;
 }
 .success{
     border: 1px solid green;
