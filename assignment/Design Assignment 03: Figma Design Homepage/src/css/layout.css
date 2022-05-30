@@ -183,7 +183,6 @@ header{
 .blog-cards{
     width: 1200px;
     height: 479px;
-    border: 1px solid red;
     margin: 0 auto;
     margin-top: 72px;
 }
@@ -243,3 +242,71 @@ header{
    
 }
 /* Blog Section Ends */
+
+/* Footer Section Begins */
+footer{
+    width: 1440px;
+    height: 398px;
+    margin: 0 auto;
+    background: #292838;
+}
+.footer{
+    padding: 72px 189px 72px 105px;
+
+}
+
+.footer-info{
+    width: 398px;
+    height: 129px;
+    float: left;
+}
+.footer-info h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+
+}
+.footer-info p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+.footer-links{
+    float: right;
+    height: 198px;
+}
+.about-us,.customers,.support{
+    float: left;
+    margin-right: 89px;
+}
+.support{
+    margin-right: 0;
+}
+.about-us ul, .customers ul, .support ul{
+    padding: 0;
+    margin: 0;
+}
+.about-us ul li, .customers ul li, .support ul li{
+    list-style-type: none;
+}
+.about-us ul li a, .customers ul li a, .support ul li a{
+    text-decoration: none;
+    color: white;
+}
+.about-us ul li:first-child,.customers ul li:first-child,.support ul li:first-child{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 110%;
+}
+.copyright{
+    width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background: #23222F;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 19px 17px;
+}
+/* Footer Section Ends */
