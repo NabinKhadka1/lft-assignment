@@ -1,0 +1,50 @@
+/* Navbar Section Starts */
+header{
+    padding: 32px 40px;
+    overflow: auto;
+}
+.logo{
+    float: left;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    line-height: 45px;
+
+}
+.logo span{
+    color: #4E42D9;
+}
+.nav-list-container{
+    float: right;
+}
+.nav-list-items{
+    margin: 0;
+    padding: 0;
+
+}
+.nav-list-items li{
+    /* background-color: blue; */
+    list-style-type: none;
+    float: left;
+    padding: 13px 48px 13px 0;
+}
+.nav-list-items li a{
+    text-decoration: none;
+    color: #797979;
+}
+
+.nav-list-items li .active{
+    color: #4E42D9 ;
+}
+.nav-list-items .nav-list-btn{
+    padding: 16px 30px;
+    padding-left: 30px;
+    background-color: #4E42D9;
+    border-radius: 4px;
+
+}
+.nav-list-items .nav-list-btn a{
+    color: white;
+}
+
+/* Navbar Section Ends */
