@@ -1,4 +1,8 @@
 /* Navbar Section Starts */
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
 header{
     padding: 32px 40px;
     overflow: auto;
@@ -23,7 +27,6 @@ header{
 
 }
 .nav-list-items li{
-    /* background-color: blue; */
     list-style-type: none;
     float: left;
     padding: 13px 48px 13px 0;
@@ -48,3 +51,51 @@ header{
 }
 
 /* Navbar Section Ends */
+
+/* Hero Section Starts */
+#hero-section{
+    width: 1200px;
+    height: 584px;
+    margin: 0 auto;
+}
+
+.hero-info-container{
+    float: left;
+    width: 500px;
+    height: 467px;
+    margin: 48px 0;
+}
+.hero-info-heading{
+    font-size: 36px;
+    line-height: 130%;
+    font-weight: 700;
+}
+.hero-info p{
+    color: #797979;
+    line-height: 150%;
+    width: 454px;
+}
+.hero-image-container{
+    width: 578px;
+    float: right;
+}
+.hero-btns{
+    margin: 48px 0;
+}
+.hero-btns a{
+    text-decoration: none;
+}
+.explore-project-btn,.about-us-btn{
+    padding: 16px 30px;
+    background: #4E42D9;
+    border-radius: 4px;
+    color: white;
+    margin-right: 12px;
+}
+.hero-btns .about-us-btn{
+    background: rgba(78, 66, 217, 0.18);
+    color: #4E42D9;
+}
+
+
+/* Hero Section Ends */
