@@ -99,3 +99,58 @@ header{
 
 
 /* Hero Section Ends */
+
+.clearfix{
+    clear: both;
+}
+
+/* Service Section Starts */
+#service-section{
+    width: 1200px;
+    height: 312px;
+    margin: 0 auto;
+}
+.service-heading{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 177.9%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #3B3950;
+
+}
+.works{
+    width: 1205px;
+    height: 313px;
+}
+.work{
+    float: left;
+    width: 285px;
+    height: 216px;
+}
+.work-image{
+    text-align: center;
+    position: relative;
+}
+.inner-work-image{
+    position: absolute;
+    left: 42%;
+    top: 25%;
+}
+.work h1{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 150%;
+    text-align: center;
+    color: #3B3950;
+}
+.work p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #797979;
+}
+/* Service Section Ends */
+
