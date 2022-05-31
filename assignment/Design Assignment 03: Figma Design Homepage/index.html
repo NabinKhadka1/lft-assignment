@@ -19,13 +19,16 @@
         <header>
             <nav>
                 <div class="logo"><span>Aww</span>some.</div>
+                <div class="hamburger-wrapper">
+                    <img src="src/images/menu.png" alt="Hamburger Icon">
+                </div>
                 <div class="nav-list-container">
                     <ul class="nav-list-items">
                         <li><a  class="active" href="#">Home</a></li>
                         <li><a href="#hero-section">About us</a></li>
                         <li><a href="#service-section">Service</a></li>
                         <li><a href="#blog-section">News</a></li>
-                        <li class="nav-list-btn"><a href="#">Contact</a></li>
+                        <li class="nav-list-btn btn-primary"><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 
@@ -35,21 +38,21 @@
         
         <!-- Hero Section Starts -->
         <section id='hero-section'>
+            <div class="hero-image-container">
+                <img src="src/images/hero-image.png" alt="Hero Image">
+            </div>
             <div class="hero-info-container">
                 <div class="hero-info">
                     <h1 class="hero-info-heading">We do the work you stay focused on your customers.</h1>
-                    <p>Awwwsome. is a digital agency passionate about storytelling, visual design, and technology. We collaborate with companies small to large around the world to help them engage their audiences and build brand awareness.</p>  
+                    <p class="paragraph">Awwwsome. is a digital agency passionate about storytelling, visual design, and technology. We collaborate with companies small to large around the world to help them engage their audiences and build brand awareness.</p>  
                     <br>
-                    <p>Our team can create amazing web experiences, beginning with deep market research, practical strategies, and professional execution.</p>
+                    <p class="paragraph">Our team can create amazing web experiences, beginning with deep market research, practical strategies, and professional execution.</p>
                         
                 </div>
                 <div class="hero-btns">
-                    <a class="explore-project-btn" href="#">Explore Projects</a>
-                    <a class="about-us-btn" href="#">About Us</a>
+                    <a class="explore-project-btn btn-primary" href="#">Explore Projects</a>
+                    <a class="about-us-btn btn" href="#">About Us</a>
                 </div>
-            </div>
-            <div class="hero-image-container">
-                <img src="src/images/hero-image.png" alt="Hero Image">
             </div>
         </section>
         <!-- Hero Section Ends -->
@@ -59,44 +62,45 @@
     </div>
     <!-- Service Section Starts -->
     <section id="service-section">
-        <p class="service-heading">What we do</p> </div>
-        <div class="works">
-            <div class="work">
-                <div class="work-image">
-                    <img class="work-rectangle-center" src="src/images/Rectangle 111.png" alt="">
-                    <div class="inner-work-image"><img src="src/images/Group.png" alt=""></div>
+        <p class="service-heading">What we do</p>
+        <div class="works-wrapper">
+            <div class="works">
+                <div class="work">
+                    <div class="work-image">
+                        <img class="work-rectangle-center" src="src/images/Rectangle 111.png" alt="">
+                        <div class="inner-work-image"><img src="src/images/Group.png" alt=""></div>
+                    </div>
+                    <h1>Web Application</h1>
+                    <p class="paragraph">Platform independant business solutions for maximum availability</p>
                 </div>
-                <h1>Web Application</h1>
-                <p>Platform independant business solutions for maximum availability</p>
-            </div>
-            <div class="work">
-                <div class="work-image">
-                    <img class="work-rectangle-center" src="src/images/Rectangle 112.png" alt="">
-                    <div class="inner-work-image"><img src="src/images/startup 1.svg" alt=""></div>
+                <div class="work">
+                    <div class="work-image">
+                        <img class="work-rectangle-center" src="src/images/Rectangle 112.png" alt="">
+                        <div class="inner-work-image"><img src="src/images/startup 1.svg" alt=""></div>
+                    </div>
+                    <h1>SEO</h1>
+                    <p>Let the world find you on top of others
+                    </p>
                 </div>
-                <h1>SEO</h1>
-                <p>Let the world find you on top of others
-                </p>
-            </div>
-            <div class="work">
-                <div class="work-image">
-                    <img class="work-rectangle-center" src="src/images/Rectangle 113.png" alt="">
-                    <div class="inner-work-image"><img src="src/images/console 1.svg" alt=""></div>
+                <div class="work">
+                    <div class="work-image">
+                        <img class="work-rectangle-center" src="src/images/Rectangle 113.png" alt="">
+                        <div class="inner-work-image"><img src="src/images/console 1.svg" alt=""></div>
+                    </div>
+                    <h1>Game Development</h1>
+                    <p>Interactive games with perfect graphics</p>
                 </div>
-                <h1>Game Development</h1>
-                <p>Interactive games with perfect graphics</p>
-            </div>
-            <div class="work">
-                <div class="work-image">
-                    <img class="work-rectangle-center" src="src/images/Rectangle 114.png" alt="">
-                    <div class="inner-work-image"><img src="src/images/cloud-computing 1.svg" alt=""></div>
+                <div class="work">
+                    <div class="work-image">
+                        <img class="work-rectangle-center" src="src/images/Rectangle 114.png" alt="">
+                        <div class="inner-work-image"><img src="src/images/cloud-computing 1.svg" alt=""></div>
+                    </div>
+                    <h1>Iot/ AI/ RObotic</h1>
+                    <p>Advanced autonomous technologies to make life simple</p>
                 </div>
-                <h1>Iot/ AI/ RObotic</h1>
-                <p>Advanced autonomous technologies to make life simple</p>
             </div>
         </div>
 
-        </div>
     </section>
     <!-- Service Section Ends -->
 
@@ -104,7 +108,7 @@
     <section id="blog-section">
         <div class="blog-info">
             <h1>Blog</h1>
-            <p>Insights, thoughts, industry trends, marketing tips, eDesign news, nerdy stuff, it's all here.</p>
+            <p class="paragraph">Insights, thoughts, industry trends, marketing tips, eDesign news, nerdy stuff, it's all here.</p>
         </div>
         <div class="blog-cards">
             <div class="blog-card">
@@ -113,7 +117,7 @@
                 </div>
                 <span class="date">November 10, 2021</span>
                 <h1>LaserNetUs Website Launch</h1>
-                <p>LaserNetUs has a new brand identity and website designed by eDesign Interactive. The homepage is dynamic and eye-catching. The website aims to highlight the innovative nature of high-intensity laser technology</p>
+                <p class="paragraph">LaserNetUs has a new brand identity and website designed by eDesign Interactive. The homepage is dynamic and eye-catching. The website aims to highlight the innovative nature of high-intensity laser technology</p>
             </div>
             <div class="blog-card">
                 <div class="blog-image">
@@ -121,7 +125,7 @@
                 </div>
                 <span class="date">February 20, 2021</span>
                 <h1>How we helped an Orthopedic Practice Increase their traffic</h1>
-                <p>We are honored and excited to be working with The Orthopedic Institute of New Jersey, the largest practice in northwest New Jersey.</p>
+                <p class="paragraph">We are honored and excited to be working with The Orthopedic Institute of New Jersey, the largest practice in northwest New Jersey.</p>
             </div>
             <div class="blog-card">
                 <div class="blog-image">
@@ -129,12 +133,12 @@
                 </div>
                 <span class="date">July 03, 2021</span>
                 <h1>The Increasing importance of Web Accessibility</h1>
-                <p>Is your website accessible to visitors with impairments?</p>
+                <p class="paragraph">Is your website accessible to visitors with impairments?</p>
             </div>
         </div>
         
         <div class="clearfix"></div>
-        <div class="button-div"><a class="view-btn">View All</a></div>
+        <div class="button-div"><a class="btn-primary">View All</a></div>
         
     </section>
     <!-- Blog Section Ends -->
@@ -144,7 +148,7 @@
         <div class="footer">
             <div class="footer-info">
                 <h1>Awwwsome</h1>
-                <p>Our team can create amazing web experiences, beginning with deep market research, practical strategies, and professional execution.
+                <p class="paragraph">Our team can create amazing web experiences, beginning with deep market research, practical strategies, and professional execution.
                 </p>
             </div>
             <div class="footer-links">
@@ -183,11 +187,12 @@
 
         </div>
         <div class="clearfix"></div>
+        <div class="copyright">
+            2022 &. Awwwsome Designers
+        </div>
         
     </footer>
-    <div class="copyright">
-        2022 @ Awwwsome Designers
-    </div>
+    
     <!-- Footer Section Ends -->
     
 </body>
