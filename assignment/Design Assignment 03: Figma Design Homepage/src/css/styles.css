@@ -22,3 +22,45 @@ ul{
     font-size: 16px;
     line-height: 150%;
 }
+.navbar a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 48px;
+    color: #797979;
+}
+.navbar .active{
+    color: #4E42D9 ;
+}
+.navbar a:last-child{
+    margin-bottom: 0;
+    color: white;
+}
+
+.nav-list-items{
+    margin: 0;
+    padding: 0;
+
+}
+.nav-list-items li{
+    list-style-type: none;
+    float: left;
+    padding: 13px 48px 13px 0;
+}
+.nav-list-items li a{
+    text-decoration: none;
+    color: #797979;
+}
+
+.nav-list-items li .active{
+    color: #4E42D9 ;
+}
+.nav-list-items .nav-list-btn{
+    padding: 16px 30px;
+    padding-left: 30px;
+    background-color: #4E42D9;
+    border-radius: 4px;
+
+}
+.nav-list-items .nav-list-btn a{
+    color: white;
+}

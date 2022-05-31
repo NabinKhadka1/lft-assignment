@@ -1,6 +1,33 @@
+#ham-container{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    display: none;
+}
+#cross-icon{
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin-top: 26px;
+    margin-right: 40.5px;
+}
+.cross-icon img{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    width: 126px;
+    margin: 294px auto;
+    height: 338px;
+    text-align: center;
+
+}
+
+
 /* Navbar Section Starts */
 .container{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 header{
@@ -31,35 +58,6 @@ header{
 .nav-list-container{
     float: right;
 }
-.nav-list-items{
-    margin: 0;
-    padding: 0;
-
-}
-.nav-list-items li{
-    list-style-type: none;
-    float: left;
-    padding: 13px 48px 13px 0;
-}
-.nav-list-items li a{
-    text-decoration: none;
-    color: #797979;
-}
-
-.nav-list-items li .active{
-    color: #4E42D9 ;
-}
-.nav-list-items .nav-list-btn{
-    padding: 16px 30px;
-    padding-left: 30px;
-    background-color: #4E42D9;
-    border-radius: 4px;
-
-}
-.nav-list-items .nav-list-btn a{
-    color: white;
-}
-
 /* Navbar Section Ends */
 
 /* Hero Section Starts */
@@ -112,7 +110,7 @@ header{
 
 /* Service Section Starts */
 #service-section{
-    width: 1440px;
+    max-width: 1440px;
     height: 312px;
     margin: 0 auto;
 }
@@ -162,7 +160,7 @@ header{
 
 /* Blog Section Starts */
 #blog-section{
-    width: 1440px;
+    max-width: 1440px;
     height: 887px;
     margin: 0 auto;
     background: #F8F8F8;
@@ -235,7 +233,7 @@ header{
 
 /* Footer Section Begins */
 footer{
-    width: 1440px;
+    max-width: 1440px;
     height: 398px;
     margin: 0 auto;
     background: #292838;
@@ -287,7 +285,7 @@ footer{
     line-height: 110%;
 }
 .copyright{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     text-align: center;
     background: #23222F;
@@ -439,7 +437,8 @@ footer{
 }
 /* Phone View Ends */
 
-/* Tab View Starts */
-
-
-/* Tab View Ends */
+@media only screen and (min-width:576px){
+    .hamburger-wrapper{
+        display: none !important;
+    }
+}
