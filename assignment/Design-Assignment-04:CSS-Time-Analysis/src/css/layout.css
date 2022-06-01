@@ -138,3 +138,46 @@ ul li a{
     line-height: 14.52px;
     color: #6B7176;
 }
+
+/* Tabs Section Starts */
+#tabs-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.tabs-section-heading{
+    margin: 32px 0;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #152536;
+}
+.tabs-section-nav{
+    float: none;
+    margin-top: 24px;
+}
+
+.tabs-section-anchor{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7749F8;
+    padding: 9px 26px 9px 26px;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 621px;
+    
+}
+.tabs-section-paragraph{
+    margin-top: 17px;
+    width: 611px;
+    height: 168px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #68717A;
+}
