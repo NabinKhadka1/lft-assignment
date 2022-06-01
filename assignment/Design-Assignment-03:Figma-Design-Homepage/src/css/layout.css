@@ -123,7 +123,7 @@ header{
     color: #3B3950;
 }
 .works-wrapper{
-    width: auto;
+    width: 1200px;
     margin: 0 auto;
 }
 .works{
@@ -362,6 +362,9 @@ footer{
     }
     .service-heading{
         padding-bottom: 72px
+    }
+    .works-wrapper{
+        width: auto;
     }
     .works{
         width: 427px;
