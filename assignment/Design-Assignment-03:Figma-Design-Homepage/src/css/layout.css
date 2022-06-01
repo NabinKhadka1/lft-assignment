@@ -18,7 +18,7 @@
 }
 .navbar{
     width: 126px;
-    margin: 294px auto;
+    margin: 150px auto;
     height: 350px;
     text-align: center;
 
@@ -266,6 +266,7 @@ footer{
 .about-us,.customers,.support{
     float: left;
     margin-right: 89px;
+    height: 210px;
 }
 .support{
     margin-right: 0;
@@ -421,10 +422,6 @@ footer{
         width: 387px;
         height: 410px;
         margin-top: 48px;
-    }
-    .support{
-        margin-top: 60px;   
-
     }
     .copyright{
         width: 427px;
