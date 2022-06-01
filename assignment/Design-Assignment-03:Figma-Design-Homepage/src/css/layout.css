@@ -19,7 +19,7 @@
 .navbar{
     width: 126px;
     margin: 294px auto;
-    height: 338px;
+    height: 350px;
     text-align: center;
 
 }
@@ -123,7 +123,7 @@ header{
     color: #3B3950;
 }
 .works-wrapper{
-    width: 1205px;
+    width: auto;
     margin: 0 auto;
 }
 .works{
