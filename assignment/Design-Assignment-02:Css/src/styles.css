@@ -394,18 +394,22 @@ th,td{
     background-color: #E7E9EB;
 }
 
-.prev,.one,.two,.three,.next{
+.prev,
+.first,
+.second,
+.third,
+.next{
+    border: 1px solid #DEE2E6;
+    padding: 12px 14px;
     text-decoration: none;
-    padding: 17px;
-    border: 1px solid #6c757d;
-    border-radius: 5px;
+    border-radius: 4px;
 }
-.one{
-    background-color: #7749f8;
+.first{
+    background-color: #7749F8;
     color: #fff;
 }
-.two,.three{
-    color: #7749f8;
+.second,.third{
+    color: #7749F8;
 }
 .pagination{
     margin: 45px 0;

@@ -243,11 +243,11 @@ ul li a{
 #buttons-section table{
     border-spacing: 30px;
 }
-#forms-section,#list-group{
+#forms-section,#list-group,#tables-section{
     max-width: 1440px;
     margin: 0 auto;
 }
-.forms-section-heading,.list-group-heading{
+.forms-section-heading,.list-group-heading,.tables-section-heading{
     margin: 32px 0;
     font-family: 'Inter';
     font-weight: 700;
@@ -425,4 +425,38 @@ ul li a{
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+}
+
+/* Table Section */
+.table-wrapper table{
+    width: 100%;
+}
+.table-wrapper th, .table-wrapper td{
+    padding: 30px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.table-wrapper tr:nth-child(even){
+    background: #F8F9FA;
+}
+
+.prev,
+.first,
+.second,
+.third,
+.next{
+    padding: 12px 14px;
+    text-decoration: none;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+}
+.first{
+    background-color: #7749F8;
+    color: #fff;
+}
+.second,.third{
+    color: #7749F8;
+}
+.paginator{
+    float: right;
 }
