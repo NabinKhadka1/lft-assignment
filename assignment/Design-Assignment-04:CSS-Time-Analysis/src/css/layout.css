@@ -243,11 +243,11 @@ ul li a{
 #buttons-section table{
     border-spacing: 30px;
 }
-#forms-section{
+#forms-section,#list-group{
     max-width: 1440px;
     margin: 0 auto;
 }
-.forms-section-heading{
+.forms-section-heading,.list-group-heading{
     margin: 32px 0;
     font-family: 'Inter';
     font-weight: 700;
@@ -356,4 +356,73 @@ ul li a{
 }
 .error{
     border: 1px solid #DC3545;
+}
+
+/* List group */
+#list-group h3{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #152536;
+    margin-top: 54px;
+    margin-bottom: 31px;
+}
+.list-group-content{
+    width: 369;
+    height: 405px;
+}
+.first-content,.second-content,.third-content{
+    width: 369px;
+    height: 135px;
+    padding: 13px 24px 13px 16px;
+}
+.first-content{
+    background: #7749F8;
+    color: white;
+}
+.second-content, .third-content{
+    background: #FFFFFF;;
+    border: 1px solid #DEE2E6;
+}
+
+.item-container{
+    margin-bottom: 16px;
+}
+.item-container .left{
+    float: left;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #152536;
+}
+.first-content .item-container .left{
+    color: #FFFFFF;
+
+}
+.item-container .right{
+    float: right;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #152536;
+}
+.first-content .item-container .right{
+    color: #FFFFFF;
+
+}
+.item-second{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+.item-third{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
 }
