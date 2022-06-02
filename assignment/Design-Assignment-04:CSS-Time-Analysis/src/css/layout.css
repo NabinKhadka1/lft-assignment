@@ -41,7 +41,11 @@ header{
 /* Navbar Section Ends */
 
 /* Color Section Starts */
+.container{
+    width: 1110px;
+    margin: 0 auto;
 
+}
 
 .color-section-h4{
     margin-top: 54px;
