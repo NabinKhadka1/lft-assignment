@@ -1,0 +1,162 @@
+/* header{
+    margin: auto;
+} */
+
+header{
+    width: 1160.58px;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 47px;
+}
+.header__logo{
+    float: left;
+    margin-right: 185.17px;
+}
+.header__nav{
+    float: right;
+}
+
+.header__nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+.header__nav--list{
+    list-style-type: none;
+    float: left;
+    padding: 9px 0;
+}
+.destination{
+    padding-right: 55px;
+}
+.hotel{
+    padding-right: 64px;
+}
+.flight{
+    padding-right: 62px;
+}
+.booking{
+    padding-right: 86px;
+}
+.login{
+    padding-right: 52px;
+}
+.signup{
+    padding-right: 42px;   
+    
+}
+.signup a{
+    border: 1px solid #212832;
+    border-radius: 5px;
+    padding: 9px 21px;
+}
+.header__nav--list a, .header__nav--list select{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #212832;
+}
+
+.header__nav--list select{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.clearfix{
+    float: none;
+}
+
+/* Hero Section */
+#hero{
+    margin: 88px 97px;
+}
+.row{
+    margin: 0 auto;
+    width: 1160.58px;
+}
+
+.col-6{
+    width: 50%;
+} 
+
+.hero--pg{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #DF6951;
+    margin-top: 98px;
+    margin-bottom: 24px;
+}
+.hero--heading{
+    height: 267px;
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -0.04em;
+    color: #181E4B;
+}
+.hero--pg1{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5E6282;
+    padding-top: 30px;
+    padding-bottom:34px;
+    /* margin-top: 30px;
+    margin-bottom: 34px; */
+}
+.hero__cta__container{
+    width: 379px;
+
+
+}
+.hero--info a{
+    text-decoration: none;
+    padding: 19px 26px 18px 27px;
+    color: white;
+    background: #F1A501;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    border-radius: 10px;
+}
+.hero--demo p{
+    color: #686D77;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+}
+.hero__image__container{
+    width: 52px;
+    height: 52px;
+}
+.hero--info{
+    margin-right: 44px;
+    padding-top: 14px;
+}
+.hero--demo{
+    /* width: 165px;
+    height: 60px; */
+}
+.hero__image{
+    width: 600px;
+}
+.hero__image--play{
+    width: 52px;
+    height:52px;
+}
+.background--image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 640px;
+    z-index: -1;
+    height: 720px;
+    overflow: hidden;
+}

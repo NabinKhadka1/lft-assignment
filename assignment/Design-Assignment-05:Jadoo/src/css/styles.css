@@ -1,0 +1,15 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Volkhov', serif;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.pt-10{
+    padding-top: 10px;
+}
