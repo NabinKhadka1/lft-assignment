@@ -13,3 +13,7 @@ body{
 .pt-10{
     padding-top: 10px;
 }
+.pr{
+    position: relative;
+    z-index: 4;
+}

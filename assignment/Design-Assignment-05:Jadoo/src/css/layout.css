@@ -380,3 +380,87 @@ header{
 .bookings__imgs{
     margin-bottom: 29px;
 }
+
+/* Testimonials Section */
+#testimonials{
+    width: 1090px;
+    margin: 0 auto;
+    height: 365px;
+}
+
+.testimonial_p{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #5E6282;
+}
+.testimonial_h1{
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #14183E;
+    width: 409px;
+    height: 130px;
+}
+
+
+.testimonial__col__right{
+    padding: 28px 68px 34px 34px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+
+}
+p img{
+    padding-right: 26px;
+}
+p img:last-child{
+    padding-right: 0px;
+}
+
+blockquote{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #5E6282;
+    margin-bottom: 34px;
+}
+.testimonial__col__right h4,.testimonial--blockquote h4{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5E6282;
+}
+.testimonial__col__right p,.testimonial--blockquote p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #5E6282;
+}
+
+/* Absolute Positioning */
+.pr{
+    position: relative;
+    z-index: 10;
+}
+.testimonial--blockquote{
+    position: absolute;
+    top: 88px;
+    left: 50px;
+    width: 502px;
+    height: 232px;
+    z-index: 2;
+    padding: 156px 0 22px 34px;
+
+    border: 2px solid #F7F7F7;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02));
+    border-radius: 10px;
+}
+
