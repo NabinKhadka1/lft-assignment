@@ -13,7 +13,17 @@ body{
 .pt-10{
     padding-top: 10px;
 }
-.pr{
-    position: relative;
-    z-index: 4;
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+}
+
+.mr-7{
+    margin-right: 7px;
 }
