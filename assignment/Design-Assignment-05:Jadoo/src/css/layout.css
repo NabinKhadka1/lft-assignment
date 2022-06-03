@@ -642,3 +642,9 @@ footer{
     line-height: 124.5%;
     color: #5E6282;
 }
+
+@media only screen and (max-width:576px){
+    header{
+        padding-top: 0;
+    }
+}
