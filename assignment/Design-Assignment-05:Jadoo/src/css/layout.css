@@ -458,9 +458,35 @@ blockquote{
     height: 232px;
     z-index: 2;
     padding: 156px 0 22px 34px;
-
     border: 2px solid #F7F7F7;
     filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02));
     border-radius: 10px;
+}
+
+/* Brands */
+#brands{
+    width: 1073px;
+    margin: 0 auto;
+}
+
+.brands__axon{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 77px;
+}
+.brands__jetstar{
+    padding-top: 27px;
+    padding-bottom: 25px;
+    padding-right: 90.14px;
+}
+.brands__qantas{
+    padding-top: 67px;
+    padding-bottom: 63px;
+    padding-left: 47px;
+    padding-right: 99px;
+}
+.brands__alitalia{
+    padding-top: 71px;
+    padding-bottom: 73px;
 }
 
