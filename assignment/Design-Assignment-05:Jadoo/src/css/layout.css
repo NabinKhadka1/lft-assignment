@@ -76,7 +76,7 @@ header{
     width: 1160.58px;
 }
 
-#hero .col-6{
+.col-6{
     width: 50%;
 } 
 #hero .col-6--left{
@@ -280,9 +280,104 @@ header{
     width: 165px;
     font-size: 16px;
 }
-/* .destination__info__left{
-    padding: 27px 0px 19px 20px;
+
+/* Bookings Section */
+#bookings{
+    width: 1060px;
+    margin: 90px auto;
 }
-.destination__info__left{
-    padding: 28px 25pxpx 80px 0px;
-} */
+.bookings__inner{
+    width: 100%;
+}
+.bookings__inner .para{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5E6282;
+}
+
+.bookings__heading1{
+    margin-top: 33px;
+    margin-bottom: 32px;
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #14183E;
+}
+
+.bookings__info{
+    width: 395px;
+    height: 250px;
+}
+.bookings__destination__info{
+    width: 327px;
+    height: 40px;
+}
+
+.bookings__destination__h4{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5E6282;
+}
+.bookings__destination__info p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5E6282;
+}
+.bookings__destination__image{
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+.bookings__payment{
+    margin-top: 30px;
+    margin-bottom: 29px;
+}
+.bookings__col__left{
+}
+.bookings__col__right{
+    height: 459px;
+    padding-top: 59px;
+    padding-right: 115px;
+}
+.bookings__cards{
+    padding: 20px 24px 26px 25px;
+    width: 370px;
+    height: 400px;
+
+}
+.bookings__cards__p{
+    margin-top: 26px;
+    margin-bottom: 13px;
+}
+.bookings__date__author{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 124.5%;
+    letter-spacing: -0.005em;
+    color: #84829A;
+    margin-top: 13px;
+    margin-bottom: 21px;
+}
+.bookings__interest__count img{
+    padding-right: 15px;
+}
+.bookings__interest__count span{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 124.5%;
+    letter-spacing: -0.02em;
+    color: #84829A;
+
+}
+.bookings__imgs{
+    margin-bottom: 29px;
+}
