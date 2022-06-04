@@ -15,6 +15,20 @@
     <title>Jadoo</title>
 </head>
 <body>
+    <div id="ham-container">
+        <div id="cross-icon">
+            <img src="src/images/x.png" alt="Cross Icon">
+        </div>
+        <div class="navbar">
+            <a class="active" href="#destinations">Destinations</a>
+            <a href="#">Hotels</a>
+            <a href="#">Flights</a>
+            <a href="#bookings">Bookings</a>
+            <a href="#">Login</a>
+            <a class="btn-primary" href="#">Sign up</a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
     <header>
         <div class="header__logo">
             <img src="src/images/Logo.png" alt="Logo">
@@ -24,10 +38,10 @@
         </div>
         <nav class="header__nav">
             <ul>
-                <li class="header__nav--list destination"><a href="#">Destinations</a></li>
+                <li class="header__nav--list destination"><a href="#destinations">Destinations</a></li>
                 <li class="header__nav--list hotel"><a href="#">Hotels</a></li>
                 <li class="header__nav--list flight"><a href="#">Flights</a></li>
-                <li class="header__nav--list booking"><a href="#">Bookings</a></li>
+                <li class="header__nav--list booking"><a href="#bookings">Bookings</a></li>
                 <li class="header__nav--list login"><a href="#">Login</a></li>
                 <li class="header__nav--list signup"><a href="#">Sign up</a></li>
                 <li class="header__nav--list">
@@ -368,5 +382,23 @@
             All rights reserved@jadoo.co
         </div>
     </footer>
+
+    <script type="text/javascript">
+        const ham = document.getElementById('ham');
+
+        const hamContainer = document.getElementById('ham-container');
+        const crossIcon = document.getElementById('cross-icon');
+        hamContainer.style.display = "none";
+        ham.onclick = function(event) {
+            hamContainer.style.display = 'block';
+
+        }
+        crossIcon.onclick = function(event){
+            console.log(crossIcon);
+            hamContainer.style.display = "none";
+            console.log(hamContainer.parentNode);
+            ham.style.display = "block";
+        }
+    </script>
 </body>
 </html>
