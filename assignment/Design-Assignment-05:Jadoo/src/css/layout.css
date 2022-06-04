@@ -12,6 +12,10 @@ header{
     float: left;
     margin-right: 185.17px;
 }
+.hamburger-wrapper{
+    display: none;
+    float: right;
+}
 .header__nav{
     float: right;
 }
@@ -165,7 +169,7 @@ header{
     height: 525px;
     margin: 0 auto;
 }
-.service-category{
+.service-category,.destination-category{
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 18px;
@@ -174,7 +178,7 @@ header{
     color: #5E6282;
 
 }
-.service--heading2{
+.service--heading2,.destination--heading2{
     font-family: 'Volkhov';
     font-weight: 700;
     font-size: 50px;
@@ -185,7 +189,7 @@ header{
     padding-bottom: 68px;
 }
 .service__box{
-    width: calc(100%/4);
+    width: 25%;
     float: left;
     padding-left: 80px;
     padding-bottom: 78px;
@@ -643,8 +647,162 @@ footer{
     color: #5E6282;
 }
 
-@media only screen and (max-width:576px){
+@media only screen and (max-width: 600px){
     header{
-        padding-top: 0;
+        padding-top: 10px;
+        width: 420px;
+        overflow: hidden;
     }
+    .header__nav{
+        display: none;
+    }
+    .hamburger-wrapper{
+        display: block;
+    }
+    .hero--pg{
+        margin-top: 20px;
+    }
+    .col-6--left{
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+    #hero{
+        width: 420px;
+        overflow: hidden;
+    }
+    #hero .col-6--left{
+        padding-bottom: 10px;
+        float: none;
+        
+    }
+    .hero__row__right{
+        float: none;
+        display: none;
+    }
+    .hero--heading{
+        font-size: 60px;
+        width: 400px;
+    }
+    .hero--pg1{
+        width: 350px;
+    }
+
+    #service{
+        width: 420px;
+        overflow: hidden;
+        padding: 10px;
+        height: 1010px;
+    }
+    .service-category{
+        text-align: left;
+    }
+    .service--heading2,.destination--heading2{
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .service__box{
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #destinations{
+        width: 420px;
+        padding: 10px;
+        overflow: hidden;
+        margin: 20px;
+    }
+    .destination-category{
+        text-align: center;
+    }
+    .destination--heading2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .destination__box__container{
+        width: 420px;
+    }
+    .destination__one,
+    .destination__two,
+    .destination__three{
+        float: none;
+        margin-right: 0;
+        width: 400px;
+        margin-bottom: 15px;
+    }
+
+    #bookings{
+        width: 420px;
+        overflow: hidden;
+    }
+    .col-6{
+        width: 100%;
+        float: none;
+    }
+
+    #testimonials{
+        width: 420px;
+        overflow: hidden;
+    }
+    #brands{
+        width: 420px;
+        overflow: hidden;
+    }
+    .brands__axon,.brands__jetstar,.brands__expedia,.brands__qantas,.brands__alitalia{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #subscribe{
+        max-width: 420px;
+        padding: 0;
+        overflow: hidden;
+    }
+    .subscribe__info{
+        position: static;
+        width: 420px;
+        border-radius: 0;
+    }
+    .subscribe__info__h1{
+        width: 400px;
+    }
+    .subscribe__form input{
+        border: 1px solid #39425D;
+        padding: 20px 5px;
+    }
+    .subscribe__img--container{
+        display: none;
+    }
+
+    footer{
+        width: 420px;
+        /* overflow: hidden; */
+    }
+    .footer__row1{
+        margin: 10px;
+        width: 400px;
+        height: 800px;
+    }
+    .footer__row1--content,.footer__row1__nav,.footer__row1__socials{
+        float: none;
+        width: 400px;
+        margin-right: 0;
+    }
+    .footer_row1__col-4{
+        margin-right: 0;
+        float: none;
+    }
+    .footer__row1__socials p{
+        padding: 10px;
+    }
+    .footer__cta--google,.footer__cta--apple{
+        float: none;
+        margin-bottom: 5px;
+        width: 107px;
+    }
+    .footer__cta--apple .a-play-image{
+        padding: 8px 5.44px 3px 7px;
+    }
+
 }
