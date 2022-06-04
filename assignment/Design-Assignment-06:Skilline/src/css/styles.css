@@ -1,0 +1,89 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav--list a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #252641;
+}
+
+.nav--list{
+    margin-right: 80px;
+}
+
+.nav--list:last-child{
+    margin-right: 0;
+}
+
+.nav--login{
+    padding: 13px 49px 14px 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
+    border-radius: 80px;
+    
+}
+
+.nav--signup{
+    padding: 13px 36px 14px 37px;
+    background: #F48C06;
+    border-radius: 80px;
+}
+
+.login--btn{
+    margin-right: 34px;
+}
+
+.login--btn a{
+    font-weight: 500;
+    color: #6C6C6C;
+}
+
+.signup--btn{
+    margin-right: 0;
+}
+
+.signup--btn a{
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.hero__heading1{
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 63px;
+    color: #2F327D;
+    margin-top: 180px;
+}
+.hero__heading1 span{
+    color: #F48C06;
+}
+.hero__paragraph{
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #464646;
+    margin: 34px 0;
+}
+
+.header__hero__cta a{
+    color: white;
+    padding: 22px 34px;
+    background: #F48C06;
+    border-radius: 80px;
+}
+.header__hero__cta span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #252641;
+}
