@@ -99,7 +99,7 @@ body{
     margin-bottom: 20px;
 }
 
-.service__heading1{
+.heading1{
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 36px;
@@ -107,7 +107,7 @@ body{
     color: #2F327D;
     text-align: center;
 }
-.service__heading1 span,.skilline__inner__heading1 span{
+.heading1 span,.skilline__inner__heading1 span{
     color: #F48C06;
 }
 .paragraph{
@@ -190,4 +190,38 @@ body{
     line-height: 180%;
     text-decoration-line: underline;
     color: #696984;
+}
+
+.features__para{
+    margin-bottom: 100px;
+}
+.features__heading1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+    text-align: left;
+    margin-top: 115px;
+}
+.h1{
+    width: 393px;
+}
+.p{
+    width: 568px;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+}
+
+.more--features--btn{
+    padding: 19px 38px 18px 38px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #F48C06;
+    border: 1px solid #F48C06;
+    border-radius: 80px;
 }
