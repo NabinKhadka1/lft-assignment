@@ -1,6 +1,64 @@
+#ham-container{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    display: none;
+}
+#cross-icon{
+    width: 24px;
+    height: 24px;
+    margin-top: 30px;
+    float: right;
+    margin-right: 12.5px;
+}
+.cross-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 150px;
+    margin: 150px auto;
+    height: 350px;
+    text-align: center;
+    font-size: 32px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #252641;;
+}
+.navbar a:hover{
+    color: #F48C06;
+}
+
+.destination{
+    padding-right: 55px;
+}
+.hotel{
+    padding-right: 64px;
+}
+.flight{
+    padding-right: 62px;
+}
+.booking{
+    padding-right: 86px;
+}
+.login{
+    padding-right: 52px;
+}
+.signup{
+    padding-right: 42px;   
+    
+}
+.signup a{
+    border: 1px solid #212832;
+    border-radius: 5px;
+    padding: 9px 21px;
+}
+
 header{
     max-width: 1920px;
-    height: 1030px;
     margin: 0 auto;
     padding: 60px 126px 0 100px ;
     display: flex;
@@ -33,9 +91,18 @@ header{
     width: 100%;
     height: 100%;
 }
+.hamburger-wrapper{
+    display: none !important;
+}
 
 .nav--lists{
     display: flex;
+}
+.nav--list a:hover{
+    color: #F48C06;
+}
+.nav--list:last-child a:hover{
+    background: white;
 }
 
 /* Hero */
@@ -61,6 +128,10 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.header__hero__cta a:hover{
+    background: white;
+    color: #F48C06;
 }
 .hero__img__left__container{
     width: 80px;
@@ -125,7 +196,7 @@ header{
     height: 100px;
     position: absolute;
     top: 0;
-    left: 35%;
+    left: 40%;
     margin-top: -42px;
 }
 .service__card__img img{
@@ -169,7 +240,7 @@ header{
     border-radius: 20px; 
 }
 #with-skilline{
-    width: 1547px;
+    max-width: 1547px;
     height: 512px;
     padding: 20px;
     margin: 0 auto;
@@ -417,4 +488,282 @@ form{
     text-align: center;
     letter-spacing: 0.04em;
     color: #B2B3CF;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 576px){
+    header{
+        max-width: 500px;
+        padding: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    .hamburger-wrapper{
+        display: block !important;
+    }
+    .header__navbar__links{
+        display: none;
+    }
+    .header__hero{
+        padding: 0 10px;
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .header__hero__left{
+        width: 480px;
+        margin-top: 30px;
+    }
+    .hero__img__container{
+        width: 480px;
+        height: auto;
+    }
+    .hero__img__container img{
+        width: 100%;
+        height: auto;
+    }
+    .hero__heading1{
+        margin-top: 0;
+    }
+    .hero__paragraph{
+        width: 480px;
+    }
+    .header__hero__cta span{
+        display: none;
+    }
+    
+    #brands{
+        max-width: 500px;
+        overflow: hidden;
+    }
+
+    .brands__logo{
+        max-width: 480px;
+        flex-direction: column;
+        padding: 40px;
+    }
+    .brands__logo img{
+        padding: 30px;
+    }
+    
+    #service{
+        max-width: 500px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .service__inner{
+        max-width: 490px;
+        height: auto;
+    }
+    .paragraph{
+        margin-bottom: 40px;
+    }
+    .service__cards{
+        max-width: 500px;
+        flex-direction: column;
+    }
+    .service__cards .card{
+        padding: 55px 50px;
+        margin: 20px auto;
+        margin-right: 0;
+        height: 370px;
+    }
+    .service__card__img{
+        left: 40%;
+    }
+
+    #skilline{
+        max-width: 500px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .skilline__inner{
+        max-width: 500px;
+        height: auto;
+    }
+    .skilline__para{
+        font-size: 18px;
+    }
+    .skilline__cards{
+        flex-direction: column;
+    }
+    .skilline__cards .card{
+        width: 480px;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #with-skilline{
+        max-width: 500px;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .with-skilline__img__container{
+        max-width: 500px;
+        height: auto;
+    }
+    .with-skilline__img__container img{
+        width: 100%;
+        height: auto;
+    }
+
+    #features{
+        max-width: 500px;
+        overflow: hidden;
+    }
+    .features__one{
+        max-width: 500px;
+        height: auto;
+        flex-direction: column;
+    }
+    .features__one__images{
+        position: static;
+        width: 500px;
+        max-width: 500px;
+        height: auto;
+        padding: 55px 0;
+        overflow: hidden;
+    }
+    .images__absolute{
+        display: none;
+    }
+    .features__one__info{
+        max-width: 500px;
+    }
+    .features__left__img{
+        width: 330px;
+        height: auto;
+    }
+    .features__left__img img{
+        width: 100%;
+        height: 100%;
+    }
+    .features__heading1{
+        margin-top: 50px;
+        text-align: left;
+        font-size: 37px;
+    }
+    .features__two,.features__three,.features__four,.features__five{
+        max-width: 500px;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .h1,.p{
+        width: 480px;
+    }
+    .features__two__right,.features__three__left,.features__four__right,.features__five__left{
+        display: none;
+    }
+    .features__two .p,.features__three .p,.features__four .p,.features__five .p{
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+
+    #integrations{
+        max-width: 500px;
+        margin: 0 auto;
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+    .integrations__para{
+        width: 480px;
+    }
+
+    #testimonials{
+        max-width: 500px;
+        height: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .testimonials__para{
+        width: 480px;
+    }
+    .testimonials__btn img{
+        left: 64%;
+    }
+    .testimonials__left{
+        margin-bottom: 20px;
+    }
+    .testimonials__right{
+        width: 500px;
+        height: auto;
+    }
+    .testimonials__right img{
+        width: 100%;
+        height: auto;
+    }
+    .testimonials__right__container{
+        max-width: 500px;
+        top: 60%;
+        left: 0px;
+        padding: 40px 0 29px 0;
+    }
+    blockquote{
+       max-width: 500px;
+    }
+    #blog{
+        max-width: 500px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .blog__news{
+        flex-direction: column;
+    }
+    .news__left__img{
+        width: 480px;
+        height: auto;
+    }
+    .heading4{
+        width: 500px;
+        margin: 20px 0;
+    }
+    .news__paragraph{
+        max-width: 500px;
+    }
+    .blog__news__one,.blog__news__two,.blog__news__three{
+        width: 500px;
+    }
+    .news__img__container{
+        display: none;
+    }
+
+    #footer{
+        max-width: 500px;
+        height: auto;
+        overflow: hidden;
+    }
+    .footer__inner{
+        max-width: 500px;
+    }
+    .footer__heading1{
+        margin: 0 auto;
+        width: 410px;
+        margin-bottom: 10px;
+    }
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe--btn{
+        width: 240px;
+        margin-top: 10px;
+    }
+    .footer__links{
+        font-size: 18px;
+    }
+    .footer__links:hover{
+        color: white;
+    }
+    .footer__center{
+        background: #252641;
+    }
 }

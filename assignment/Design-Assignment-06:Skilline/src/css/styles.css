@@ -168,8 +168,19 @@ body{
     border: 1px solid #FFFFFF;
     border-radius: 80px;
 }
+.skilline__card__btn1{
+    background: rgba(23, 27, 65, 0.5);
+}
+.skilline__card__btn1:hover{
+    background: white;
+    color: rgba(23, 27, 65, 0.5);
+}
 .skilline__card__btn2{
     background: rgba(35, 189, 238, 0.9);
+}
+.skilline__card__btn2:hover{
+    color: rgba(35, 189, 238, 0.9);
+    background: white;
 }
 .with-skilline__heading1{
     font-family: 'Poppins';
@@ -233,6 +244,10 @@ body{
     color: #F48C06;
     border: 1px solid #F48C06;
     border-radius: 80px;
+}
+.more--features--btn:hover,.integrations--btn:hover,.testimonials--btn:hover{
+    background: #F48C06;
+    color: white;
 }
 .integrations__heading1{
     width: 480px;
@@ -358,4 +373,8 @@ form input{
     background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);
     border-radius: 60px;
     padding: 14px 34px;
+}
+.subscribe--btn:hover{
+    background: white;
+    color:#545AE7;
 }

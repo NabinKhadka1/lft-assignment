@@ -15,6 +15,19 @@
     <title>Skilline</title>
 </head>
 <body>
+    <div id="ham-container">
+        <div id="cross-icon">
+            <img src="src/images/x.png" alt="Cross Icon">
+        </div>
+        <div class="navbar">
+            <a class="active" href="#">Home</a>
+            <a href="#">Careers</a>
+            <a href="#blog">Blog</a>
+            <a href="#skilline">About Us</a>
+            <a href="#">Login</a>
+            <a class="btn-primary" href="#">Sign up</a>
+        </div>
+    </div>
     <header>
         <div class="header__navbar">
             <div class="header__navbar__logo">
@@ -23,12 +36,15 @@
                     Skilline
                 </div>
             </div>
+            <div id="ham" class="hamburger-wrapper">
+                <img src="src/images/menu.png" alt="Hamburger Icon">
+            </div>
             <div class="header__navbar__links">
                 <ul class="nav--lists">
                     <li class="nav--list"><a href="#">Home</a></li>
                     <li class="nav--list"><a href="#">Careers</a></li>
-                    <li class="nav--list"><a href="#">Blog</a></li>
-                    <li class="nav--list"><a href="#">About Us</a></li>
+                    <li class="nav--list"><a href="#blog">Blog</a></li>
+                    <li class="nav--list"><a href="#skilline">About Us</a></li>
                     <li class="nav--list login--btn"><a class="nav--login" href="#">Login</a></li>
                     <li class="nav--list signup--btn"><a class="nav--signup" href="#">Sign up</a></li>
                 </ul>
@@ -204,9 +220,9 @@
                 <img src="src/images/feat-3.png" alt="Feature Three Image">
             </div>
             <div class="features__three__right">
-                <h1 class="h1 heading1 features__heading1"><span>Tools</span> For Teachers And Learners</h1>
-                <p class="p paragraph">Class has a dynamic set of teaching tools built to be deployed and used during class.
-                    Teachers can handout assignments in real-time for students to complete and submit.</p>
+                <h1 class="h1 heading1 features__heading1">Assessments, <span>Quizzes</span>, Tests</h1>
+                <p class="p paragraph">Easily launch live assignments, quizzes, and tests.
+                    Student results are automatically entered in the online gradebook.</p>
             </div>
         </div>
 
@@ -366,5 +382,24 @@
             <p class="footer__center">&copy 2021 Class Technologies Inc.</p>
         </div>
     </footer>
+
+
+    <script type="text/javascript">
+        const ham = document.getElementById('ham');
+
+        const hamContainer = document.getElementById('ham-container');
+        const crossIcon = document.getElementById('cross-icon');
+        hamContainer.style.display = "none";
+        ham.onclick = function(event) {
+            hamContainer.style.display = 'block';
+
+        }
+        crossIcon.onclick = function(event){
+            console.log(crossIcon);
+            hamContainer.style.display = "none";
+            console.log(hamContainer.parentNode);
+            ham.style.display = "block";
+        }
+    </script>
 </body>
 </html>
