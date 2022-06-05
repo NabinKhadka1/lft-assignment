@@ -87,3 +87,54 @@ body{
     line-height: 36px;
     color: #252641;
 }
+
+#brands p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #696984;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service__heading1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 180%;
+    color: #2F327D;
+    text-align: center;
+}
+.service__heading1 span{
+    color: #F48C06;
+}
+.service__paragraph{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    text-align: center;
+    color: #696984;
+    margin-bottom: 160px;
+}
+.service__heading4{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #2F327D;
+    margin-bottom: 24px;
+}
+.service__paragraph1{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+    color: #696984;
+
+}
