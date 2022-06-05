@@ -183,10 +183,10 @@ body{
     text-align: left;
     margin-bottom: 30px;
 }
-.with-skilline__link{
+.with-skilline__link,.blog__link{
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 180%;
     text-decoration-line: underline;
     color: #696984;
@@ -263,4 +263,53 @@ body{
 .p3{
     margin-top: 46px;
     margin-bottom: 43px;
+}
+.blog__heading1,.blog__para{
+    font-family: 'Nunito Sans';
+}
+
+.news--tag{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #252641;
+    padding: 2px 36px;
+    background: #F4C467;
+    border-radius: 80px;
+    width: 130px;
+}
+.heading4{
+    width: 609px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 180%;
+    color: #252641;
+    margin: 22px 0 20px 0;
+}
+
+
+.blog__para{
+    margin-bottom: 100px;
+}
+.news__paragraph{
+    width: 609px;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 28px;
+}
+.h4{
+    width: 477px;
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.news__para{
+    margin-bottom: 0;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    text-align: left;
+    width: 447px;
 }
