@@ -56,8 +56,8 @@ body{
 .hero__heading1{
     font-family: 'Nunito Sans';
     font-weight: 700;
-    font-size: 39px;
-    line-height: 63px;
+    font-size: 54px;
+    line-height: 81px;
     color: #2F327D;
     margin-top: 180px;
 }
@@ -66,7 +66,8 @@ body{
 }
 .hero__paragraph{
     font-family: 'Nunito Sans';
-    font-size: 20px;
+    width: 523px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 160%;
     color: #464646;
@@ -191,6 +192,14 @@ body{
     text-decoration-line: underline;
     color: #696984;
 }
+.footer__links{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: #B2B3CF;
+}
 
 .features__para{
     margin-bottom: 100px;
@@ -312,4 +321,41 @@ body{
     font-size: 20px;
     text-align: left;
     width: 447px;
+}
+.footer__heading4{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    width: 156px;
+}
+.vertical-line{
+    border: 1px solid #626381;
+}
+.footer__heading1{
+    color: #B2B3CF;
+    line-height: 39px;
+    width: 440px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+form input{
+    width: 400px;
+    border: 1px solid #83839A;
+    border-radius: 80px;
+    padding: 15px 258px 15px 30px;
+    color: #83839A;
+}
+.subscribe--btn{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);
+    border-radius: 60px;
+    padding: 14px 34px;
 }
