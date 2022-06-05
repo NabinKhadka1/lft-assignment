@@ -248,3 +248,18 @@ header{
     justify-content: center;
     align-items: center;
 }
+#integrations{
+    display: flex;
+    width: 1457px;
+    height: 459px;
+    margin: 160px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.integrations__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+    align-items: flex-end;
+}

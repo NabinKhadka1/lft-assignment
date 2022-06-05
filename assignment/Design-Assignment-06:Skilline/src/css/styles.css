@@ -214,7 +214,7 @@ body{
 
 }
 
-.more--features--btn{
+.more--features--btn,.integrations--btn{
     padding: 19px 38px 18px 38px;
     font-family: 'Nunito Sans';
     font-weight: 400;
@@ -224,4 +224,19 @@ body{
     color: #F48C06;
     border: 1px solid #F48C06;
     border-radius: 80px;
+}
+.integrations__heading1{
+    width: 480px;
+    font-family: 'Nunito Sans';
+    text-align: left;
+}
+.integrations__para{
+    font-family: 'Nunito Sans';
+    text-align: left;
+    margin-bottom: 44px;
+    width: 687px;
+}
+.integrations__right__img span{
+    color: #525596;
+    padding-left: 30px;
 }
