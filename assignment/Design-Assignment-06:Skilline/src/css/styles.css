@@ -61,7 +61,7 @@ body{
     color: #2F327D;
     margin-top: 180px;
 }
-.hero__heading1 span{
+.hero__heading1 span,.with-skilline__heading1 span{
     color: #F48C06;
 }
 .hero__paragraph{
@@ -107,10 +107,10 @@ body{
     color: #2F327D;
     text-align: center;
 }
-.service__heading1 span{
+.service__heading1 span,.skilline__inner__heading1 span{
     color: #F48C06;
 }
-.service__paragraph{
+.paragraph{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -137,4 +137,57 @@ body{
     text-align: center;
     color: #696984;
 
+}
+.skilline__inner__heading1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 180%;
+    color: #2F327D;
+    text-align: center;
+}
+.skilline__card__heading1{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.skilline__para{
+    margin-bottom: 113px;
+}
+.skilline__card__btn1,.skilline__card__btn2{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 24px 38px 23px 37px;
+    border: 1px solid #FFFFFF;
+    border-radius: 80px;
+}
+.skilline__card__btn2{
+    background: rgba(35, 189, 238, 0.9);
+}
+.with-skilline__heading1{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 160%;
+    color: #2F327D;
+    margin-top: 64px;
+    margin-bottom: 30px;
+}
+.with-skilline__para{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.with-skilline__link{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    text-decoration-line: underline;
+    color: #696984;
 }

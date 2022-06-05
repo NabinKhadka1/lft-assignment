@@ -78,7 +78,7 @@ header{
     align-items: center;
 }
 
-#service{
+#service,#skilline{
     max-width: 1920px;
     margin: 100px auto;
 }
@@ -119,9 +119,42 @@ header{
     position: relative;
 }
 
-/* .img1{
-    position: absolute;
-    top: 0;
-    left: 35%;
-    margin-top: -42px;
-} */
+.skilline__inner{
+    max-width: 1300px;
+    height: 708px;
+    margin: 0 auto;
+}
+.skilline__cards{
+    display: flex;
+}
+.skilline__cards .card{
+    width: 600px;
+    height: 400px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skilline__card1{
+    background-color: rgba(23, 27, 65, 0.5);
+    background-image: url("../images/skilline-img1.png");
+    opacity: 0.6;
+    border: 1px solid #000000;
+    border-radius: 20px; 
+}
+.skilline__card2{
+    background-color: rgba(23, 27, 65, 0.5);
+    background-image: url("../images/skilline-img2.png");
+    opacity: 0.6;
+    border: 1px solid #000000;
+    border-radius: 20px; 
+}
+#with-skilline{
+    width: 1547px;
+    height: 512px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+}
