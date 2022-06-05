@@ -214,7 +214,7 @@ body{
 
 }
 
-.more--features--btn,.integrations--btn{
+.more--features--btn,.integrations--btn,.testimonials--btn{
     padding: 19px 38px 18px 38px;
     font-family: 'Nunito Sans';
     font-weight: 400;
@@ -236,7 +236,31 @@ body{
     margin-bottom: 44px;
     width: 687px;
 }
-.integrations__right__img span{
+.integrations__right__img span,.testimonials__left__img span{
     color: #525596;
     padding-left: 30px;
+}
+
+.testimonials__heading1{
+    width: 455px;
+    font-family: 'Nunito Sans';
+    font-size: 60px;
+    line-height: 82px;
+    text-align: left;
+    margin-top: 32px;
+}
+.testimonials__para{
+    width: 607px;
+    font-size: 26px;
+    line-height: 160%;
+    text-align: left;
+    margin-bottom: 0;
+}
+.p1{
+    margin-top: 29px;
+    margin-bottom: 26px;
+}
+.p3{
+    margin-top: 46px;
+    margin-bottom: 43px;
 }
