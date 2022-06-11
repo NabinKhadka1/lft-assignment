@@ -90,8 +90,8 @@ const ball_arr = [];
 
 for (let i=0; i<ball_count; i++){
     const rad = getRandomInt(10,20);    //Radius of ball
-    const x = getRandomInt(rad,CONTAINER_WIDTH- Math.floor(rad/2)); //Random x position
-    const y = getRandomInt(rad,CONTAINER_HEIGHT-Math.floor(rad/2)); //Random y position
+    const x = getRandomInt(rad,CONTAINER_WIDTH- rad); //Random x position
+    const y = getRandomInt(rad,CONTAINER_HEIGHT- rad); //Random y position
 
     const sx = getRandomInt(2,4);   // Speed x direction
     const sy = getRandomInt(2,4);      //Speed y direction
