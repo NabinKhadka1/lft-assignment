@@ -228,14 +228,12 @@ header{
 .skilline__card1{
     background-color: rgba(23, 27, 65, 0.5);
     background-image: url("../images/skilline-img1.png");
-    opacity: 0.6;
     border: 1px solid #000000;
     border-radius: 20px; 
 }
 .skilline__card2{
     background-color: rgba(23, 27, 65, 0.5);
     background-image: url("../images/skilline-img2.png");
-    opacity: 0.6;
     border: 1px solid #000000;
     border-radius: 20px; 
 }
