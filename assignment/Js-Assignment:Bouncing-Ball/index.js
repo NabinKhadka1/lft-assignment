@@ -4,6 +4,8 @@ const CONTAINER_BORDER = '1px solid black';
 const CONTAINER_MARGIN = '100px auto';
 const BORDER_RADIUS = '50%'
 
+
+
 const body = document.querySelector('body');
 body.style.position = 'relative';
 body.style.width = pixelate(CONTAINER_WIDTH);
@@ -16,7 +18,7 @@ function pixelate(value){
 }
 
 class Ball{
-    constructor(width,height,x,y,sx,sy,dx,dy){
+    constructor(width,height,x,y,sx,sy,dx,dy,color){
         this.width = width;
         this.height = height;
         this.x = x;
@@ -25,6 +27,7 @@ class Ball{
         this.sy = sy;
         this.dx = dx;
         this.dy = dy;
+        this.color = color
         this.element = document.createElement('div');
         this.create();
     }
@@ -34,7 +37,7 @@ class Ball{
         this.element.style.width = `${this.width}px`;
         this.element.style.height = `${this.height}px`;
         this.element.style.borderRadius = `${BORDER_RADIUS}`;
-        this.element.style.background = 'blue';
+        this.element.style.background = `${this.color}`;
         this.element.style.top = `${this.x}px`;
         this.element.style.left = `${this.y}px`;
         body.appendChild(this.element);
@@ -67,7 +70,7 @@ class Ball{
             let dist_y = Math.pow((this.y - ballToCompare.y),2)
 
             let distance = Math.sqrt(dist_x + dist_y)
-            if(distance - this.width/2 <=0){
+            if(distance - this.width <=0){
                 this.dx = -this.dx;
                 this.dy = -this.dy;
             }
@@ -89,13 +92,15 @@ for (let i=0; i<ball_count; i++){
     const x = getRandomInt(rad,CONTAINER_WIDTH- Math.floor(rad/2)); //Random x position
     const y = getRandomInt(rad,CONTAINER_HEIGHT-Math.floor(rad/2)); //Random y position
 
-    const sx = getRandomInt(2,6);   // Speed x direction
-    const sy = getRandomInt(2,6);      //Speed y direction
-
+    const sx = getRandomInt(2,4);   // Speed x direction
+    const sy = getRandomInt(2,4);      //Speed y direction
+    console.log(sx,sy)
     const dx = Math.random() > 0.5 ? 1:-1;  //Direction
     const dy = Math.random() > 0.5 ? 1:-1;
 
-    ball_arr.push(new Ball(rad*2,rad*2,x,y,sx,sy,dx,dy));
+    const color = `rgb(${getRandomInt(0,256)},${getRandomInt(0,256)},${getRandomInt(0,256)})`;
+
+    ball_arr.push(new Ball(rad*2,rad*2,x,y,sx,sy,dx,dy,color));
 }
 
 let ball = new Ball();
@@ -110,8 +115,4 @@ function play(){
     })
 }
 play();
-
-
-
-
 
