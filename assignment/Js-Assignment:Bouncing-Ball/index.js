@@ -67,14 +67,21 @@ class Ball{
     checkBallCollision(i_index,ball_arr){
         ball_arr.forEach((ballToCompare,j_index)=>{
             if (i_index==j_index) return;
-            let dist_x = Math.pow((this.x - ballToCompare.x),2);
-            let dist_y = Math.pow((this.y - ballToCompare.y),2);
-
-            let distance = Math.sqrt(dist_x + dist_y);
-            if(distance - this.width <=0){
+            let dx = (this.x + this.width/2) - (ballToCompare.x + ballToCompare.width/2);
+            let dy = (this.y + this.height/2) - (ballToCompare.y + ballToCompare.height/2);
+            let distance = Math.sqrt(dx*dx + dy*dy);
+            if (distance < this.width/2 + ballToCompare.width/2){
                 this.dx = -this.dx;
                 this.dy = -this.dy;
             }
+            // let dist_x = Math.pow((this.x - ballToCompare.x),2);
+            // let dist_y = Math.pow((this.y - ballToCompare.y),2);
+
+            // let distance = Math.sqrt(dist_x + dist_y);
+            // if(distance - this.width <=0){
+            //     this.dx = -this.dx;
+            //     this.dy = -this.dy;
+            // }
         })
     }
 }
