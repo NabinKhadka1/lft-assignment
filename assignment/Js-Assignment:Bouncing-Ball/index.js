@@ -17,9 +17,9 @@ function pixelate(value){
 }
 
 class Ball{
-    constructor(width,height,x,y,sx,sy,dx,dy,color){
-        this.width = width;
-        this.height = height;
+    constructor(radius,x,y,sx,sy,dx,dy,color){
+        this.width = this.height = radius * 2;
+        this.radius = radius;
         this.x = x;
         this.y = y;
         this.sx = sx;
@@ -67,10 +67,10 @@ class Ball{
     checkBallCollision(i_index,ball_arr){
         ball_arr.forEach((ballToCompare,j_index)=>{
             if (i_index==j_index) return;
-            let dx = (this.x + this.width/2) - (ballToCompare.x + ballToCompare.width/2);
-            let dy = (this.y + this.height/2) - (ballToCompare.y + ballToCompare.height/2);
+            let dx = (this.x + this.radius) - (ballToCompare.x + ballToCompare.radius);
+            let dy = (this.y + this.radius) - (ballToCompare.y + ballToCompare.radius);
             let distance = Math.sqrt(dx*dx + dy*dy);
-            if (distance < this.width/2 + ballToCompare.width/2){
+            if (distance < this.radius + ballToCompare.radius){
                 this.dx = -this.dx;
                 this.dy = -this.dy;
             }
@@ -92,11 +92,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-const ball_count = getRandomInt(5,20);
+const ball_count = getRandomInt(5,30);
 const ball_arr = [];
 
 for (let i=0; i<ball_count; i++){
-    const rad = getRandomInt(10,20);    //Radius of ball
+    const rad = getRandomInt(2,20);    //Radius of ball
     const x = getRandomInt(rad,CONTAINER_WIDTH- rad); //Random x position
     const y = getRandomInt(rad,CONTAINER_HEIGHT- rad); //Random y position
 
@@ -108,7 +108,7 @@ for (let i=0; i<ball_count; i++){
 
     const color = `rgb(${getRandomInt(0,256)},${getRandomInt(0,256)},${getRandomInt(0,256)})`;
 
-    ball_arr.push(new Ball(rad*2,rad*2,x,y,sx,sy,dx,dy,color));
+    ball_arr.push(new Ball(rad,x,y,sx,sy,dx,dy,color));
 }
 
 let ball = new Ball();
