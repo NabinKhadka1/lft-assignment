@@ -1,0 +1,59 @@
+#main-container{
+    width: 400px;
+    height: 636px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+}
+.start-info{
+    position: relative;
+    top: 45%;
+    left: 40%;
+    font-size: 25px;
+    color: rgb(202, 27, 27);
+}
+.game-container{
+    position: relative;
+    background: url('../images/lane.jpg');
+    background-repeat: repeat-y;
+    animation: animation 1s linear infinite;
+    height: 100%;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+.car,.enemy{
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    left: 50px;
+    top: 50px;
+}
+.car{
+    background: url('../images/self.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.enemy{
+    background: url('../images/enemy.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.score{
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    width: 200px;
+    height: 30px;
+    z-index: 10;
+    color: white;
+}
+@keyframes animation{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 400px;
+    }
+}
