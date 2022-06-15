@@ -1,0 +1,3 @@
+const CAR_WIDTH = 50;
+const CAR_HEIGHT = 70;
+const CONTAINER_WIDTH = 400;

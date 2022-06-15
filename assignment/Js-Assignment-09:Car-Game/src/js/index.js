@@ -1,7 +1,3 @@
-const CAR_WIDTH = 50;
-const CAR_HEIGHT = 70;
-const CONTAINER_WIDTH = 400;
-
 const mainContainer = document.getElementById('main-container');
 const gameContainer = document.querySelector('.game-container');
 const startInfo = document.querySelector('.start-info');
@@ -22,9 +18,14 @@ function collisionDetection(mycar,myenemy){
     const myCar = mycar.getBoundingClientRect();
     const myEnemy = myenemy.getBoundingClientRect();
     
-    return  !((myCar.bottom < myEnemy.top) || (myCar.top > myEnemy.bottom) || (
-        myCar.right < myEnemy.left) || (
-            myCar.left > myEnemy.right))
+    if (
+        myCar.x + CAR_WIDTH >= myEnemy.x &&
+        myCar.x <= myEnemy.x + CAR_WIDTH &&
+        myCar.y + CAR_HEIGHT >= myEnemy.y &&
+        myCar.y <= myEnemy.y + CAR_HEIGHT
+    ){
+        return true;
+    }
 }
 function gameOver(){
     start.isTrue = false;
@@ -35,7 +36,6 @@ function gameOver(){
 function generateEnemy(car){
     let enemy = document.querySelectorAll('.enemy');
     enemy.forEach(singleEnemy =>{
-        // console.log(singleEnemy,singleEnemy.y)
         if(collisionDetection(car,singleEnemy)){
             gameOver();
         }
@@ -45,8 +45,6 @@ function generateEnemy(car){
 
         }
         singleEnemy.y += position.value;
-        // console.log(singleEnemy,singleEnemy.y)
-
         singleEnemy.style.top = singleEnemy.y + 'px';
     })
 }
@@ -54,17 +52,14 @@ function generateEnemy(car){
 function play(){
     let car = document.querySelector('.car');
     let lane = gameContainer.getBoundingClientRect();
-    // console.log(lane);
     if (start.isTrue){
         generateEnemy(car);
     
         position.x = car.offsetLeft;
         position.y = car.offsetTop;
-        // console.log(lane.width);
     
         if(arrows.ArrowDown && position.y < (lane.bottom - CAR_HEIGHT)){
             position.y += position.value;
-            // console.log(position.y)
         } else if(arrows.ArrowUp && position.y > (lane.top + CAR_HEIGHT)){
             position.y -= position.value;
         } else if(arrows.ArrowLeft && position.x > 0 ){
@@ -81,7 +76,6 @@ function play(){
     }
 }
 function startGame(e){
-    // console.log(e.key);
     gameContainer.classList.remove('hidden');
     startInfo.classList.add('hidden');
 
