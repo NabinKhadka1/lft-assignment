@@ -1,0 +1,33 @@
+.start{
+    position: relative;
+    width: 524px;
+    height: 636px;
+    margin: 0 auto;
+    background-color: black;
+    top: 45%;
+    text-align: center;
+    color: white;
+    padding-top: 300px;
+}
+.game-wrapper{
+    position: relative;
+    width: 524px;
+    height: 636px;
+    margin: 0 auto;
+}
+
+.base-container{
+    position: absolute;
+    animation: animation 3s linear infinite;
+}
+@keyframes animation{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -400px 0px;
+    }
+}
+.hidden{
+    display: none;
+}
