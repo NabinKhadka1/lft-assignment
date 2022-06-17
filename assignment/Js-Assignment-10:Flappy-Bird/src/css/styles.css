@@ -9,6 +9,17 @@
     color: white;
     padding-top: 300px;
 }
+.game-over{
+    position: relative;
+    width: 524px;
+    height: 636px;
+    margin: 0 auto;
+    background-color: black;
+    top: 45%;
+    text-align: center;
+    color: white;
+    padding-top: 300px;
+}
 .game-wrapper{
     position: relative;
     width: 524px;
@@ -30,4 +41,11 @@
 }
 .hidden{
     display: none;
+}
+.score{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 50%;
+    text-align: center;
 }

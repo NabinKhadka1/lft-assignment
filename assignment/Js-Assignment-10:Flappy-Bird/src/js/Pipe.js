@@ -41,76 +41,51 @@ class Pipe{
         this.pipeBottom.style.background = "url('../Js-Assignment-10:Flappy-Bird/src/images/pipe-green.png')";
         pipeContainer.appendChild(this.pipeBottom);
     }
+    checkCollision(){
+        if
+        (bird.x_position + bird.width >= parseInt(this.pipeTop.style.left)
+        && bird.x_position <= (parseInt(this.pipeTop.style.left) + parseInt(this.pipeTop.style.width))
+        && bird.y_position <= parseInt(this.pipeTop.style.top) + parseInt(this.pipeTop.style.height)
+        
+        ){
+            collision = true;
+        }
+
+        if
+        (bird.x_position + bird.width >= parseInt(this.pipeTop.style.left)
+        && bird.x_position <= (parseInt(this.pipeTop.style.left) + parseInt(this.pipeTop.style.width))
+        && bird.y_position + parseInt(bird.height)>= parseInt(this.pipeTop.style.top) + parseInt(this.pipeTop.style.height) + this.gap
+        
+        ){
+            collision = true;
+        }
+
+    }
     movePipe(){
-        this.pipeTop.style.left = (parseInt(this.pipeTop.style.left) + this.x) + 'px';
-        this.pipeBottom.style.left =  (parseInt(this.pipeTop.style.left) + this.x) + 'px';
-        if (parseInt(this.pipeTop.style.left) <= -50){
-            this.randomTopPosition = getRandomInt(MIN_HEIGHT,CONTAINER_HEIGHT-this.gap-MIN_HEIGHT)
-            this.pipeTop.style.height = pixelate(this.randomTopPosition);
-            this.pipeBottom.style.height = (CONTAINER_HEIGHT - (this.randomTopPosition + this.gap)) + 'px';
-
-            this.pipeTop.style.left = (CONTAINER_WIDTH) + 'px';
-            this.pipeBottom.style.left = (CONTAINER_WIDTH) + 'px';
-            score += 1;
-
+        this.checkCollision();
+        if(!collision){
+            this.pipeTop.style.left = (parseInt(this.pipeTop.style.left) + this.x) + 'px';
+            this.pipeBottom.style.left =  (parseInt(this.pipeTop.style.left) + this.x) + 'px';
+            if (parseInt(this.pipeTop.style.left) <= -50){
+                this.randomTopPosition = getRandomInt(MIN_HEIGHT,CONTAINER_HEIGHT-this.gap-MIN_HEIGHT)
+                this.pipeTop.style.height = pixelate(this.randomTopPosition);
+                this.pipeBottom.style.height = (CONTAINER_HEIGHT - (this.randomTopPosition + this.gap)) + 'px';
+    
+                this.pipeTop.style.left = (CONTAINER_WIDTH) + 'px';
+                this.pipeBottom.style.left = (CONTAINER_WIDTH) + 'px';
+                score += 1;
+                console.log(score);
+                scoreInner.innerHTML = score;
+            }
+        } else{
+            gameWrapper.classList.add('hidden');
+            over.classList.remove('hidden');
+            finalScore.innerText = score;
         }
     }
 }
 const pipe1 = new Pipe();
 const pipe2 = new Pipe(200);
-const bird1 = new Bird()
-
-function generatePipe(pipe1,pipe2){
-    pipe1top={
-        x: parseInt(pipe1.pipeTop.style.left),
-        y: 0,
-        width: PIPE_WIDTH,
-        height: pipe1.randomTopPosition
-    };
-    pipe1bottom={
-        x: parseInt(pipe1.pipeTop.style.left),
-        y: CONTAINER_HEIGHT - parseInt(pipe1.pipeBottom.style.height),
-        width: PIPE_WIDTH,
-        height: CONTAINER_HEIGHT - pipe1.randomTopPosition - GAP
-    };
-    pipe2top={
-        x: parseInt(pipe2.pipeTop.style.left),
-        y: 0,
-        width: PIPE_WIDTH,
-        height: pipe2.randomTopPosition
-    };
-    pipe2bottom={
-        x: parseInt(pipe2.pipeTop.style.left),
-        y: CONTAINER_HEIGHT - parseInt(pipe2.pipeBottom.style.height),
-        width: PIPE_WIDTH,
-        height: CONTAINER_HEIGHT - pipe2.randomTopPosition - GAP
-    };
-    pipes = [pipe1top,pipe1bottom,pipe2top,pipe2bottom]
-    return pipes
-}
-function checkCollision(pipe1,pipe2,bird1){
-    let idx = 0;
-    
-    setInterval(()=>{
-        pipeObject = generatePipe(pipe1,pipe2);
-        pipe = pipeObject[idx];
-
-        if (
-            bird1.x + bird1.width <= pipe.x &&
-            bird1.x <= pipe.x + pipe.width &&
-            bird1.y_position + bird1.height >= pipe.y &&
-            bird1.y_position <= pipe.y + pipe.height
-        ){
-            alert('hello  collision detected')
-            bird1.collision = true;
-        }
-        idx += 1;
-        if (idx == 4){
-            idx = 0;
-        }
-    }, 1000/60);
-}
-checkCollision(pipe1,pipe2,bird1)
 
 
 var random = null;
@@ -119,5 +94,6 @@ function playPipe(){
     pipe2.movePipe()
 }
 setInterval(playPipe,20);
+
 
 
