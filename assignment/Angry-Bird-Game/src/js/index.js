@@ -1,4 +1,4 @@
-let imageURL = ['../src/image/bg.png','./src/image/base.png','../src/image/ground.png','../src/image/catapult1.png','../src/image/catapult3.png','../src/image/wood1.png','../src/image/wood1.png','../src/image/wood1.png','../src/image/pig.png']
+let imageURL = ['./src/image/bg.png','./src/image/base.png','./src/image/ground.png','./src/image/catapult1.png','./src/image/catapult3.png','./src/image/wood1.png','./src/image/wood1.png','./src/image/wood1.png','./src/image/pig.png']
 let images = [];
 let counter = 0;
 let isMouseDown = false;
@@ -121,12 +121,12 @@ window.onload = function () {
                 console.log(angle);
                 // vx = speed * Math.cos(angle);
                 // vy = speed * Math.sin(angle);
-                vx = speed * Math.cos(angle) * t + velocity_x;
-                vy = 0.5 * gravity * t * t + speed * Math.sin(angle) * t + velocity_y;
+                // vx = speed * Math.cos(angle) * t + velocity_x;
+                vx = 2*Math.sin(angle);
+                vy = 1.2 * gravity * t * t + speed * Math.sin(angle) * t + velocity_y;
                 console.log(vx,vy);
                 bird.x += vx  ;
-                bird.y -= vy  ;
-                
+                bird.y += vy  ;
             }
         }
     }
