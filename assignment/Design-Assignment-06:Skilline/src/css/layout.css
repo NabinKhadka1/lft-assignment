@@ -109,6 +109,7 @@ header{
 .header__hero{
     padding: 0px 42px 0 40px;
     display: flex;
+    justify-content: space-around;
 }
 .header__hero__left{
     width: 681px;
